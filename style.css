@@ -12,7 +12,7 @@
 :root {
     --princ: #6C5CE7;
     --cText: #2F3640;
-    --fundo: #F7F1E3;
+    --fundo: #ffefcb;
     --meh: #55E6C1;
 
     --t-princ:  "Playfair Display", serif;  
@@ -47,6 +47,42 @@
     #mucho-texto p {
         font-size: 15px;
         font-family: var(--t-corpo);
+    }
+
+    .flash {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        margin-top: 1.5em;
+    }
+    
+    .flash-iten {
+        width: 350px;
+        height: 350px;
+        background-color: var(--fundo);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        margin: .5em 0;
+        box-shadow: 7px 10px 15px #0003;
+        position: relative;
+    }
+
+    .tema {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--fundo);
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 0 10px;
+        box-shadow: 3px 3px 7px #0005;
     }
 
     footer {
@@ -98,6 +134,47 @@
         font-size: 20px;
         font-family: var(--t-corpo);
     }
+    
+    #escolher {
+        font-size: 25px;
+    }
+
+    .flash {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        margin-top: 1.5em;
+    }
+    
+    .flash-iten {
+        width: 250px;
+        height: 250px;
+        background-color: var(--fundo);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        margin: .5em 0;
+        box-shadow: 7px 10px 15px #0003;
+        position: relative;
+    }
+
+    .tema {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--fundo);
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 0 10px;
+        box-shadow: 3px 3px 7px #0005;
+        font-size: 15px;
+    }
 
     footer {
         background-color: var(--princ);
@@ -113,10 +190,6 @@
         width: 325px;
         margin: auto;
     }
-
-    #escolher {
-        font-size: 25px;
-    }
 }
 
 main {
@@ -126,35 +199,6 @@ main {
 #escolher {
     text-align: center;
     margin: 1em auto;
-}
-
-.flash {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Distribui o espaço igualmente entre as divs */
-    align-items: center;
-    gap: 20px; /* Espaçamento fixo entre as linhas */
-    height: 100%;
-    margin-top: 1.5em;
-}
-
-.flash-iten {
-    width: 150px;
-    height: 150px;
-    background-color: #4CAF50;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-}
-
-@media (max-width: 600px) {
-    .item {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 footer a {
