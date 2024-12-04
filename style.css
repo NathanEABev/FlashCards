@@ -49,6 +49,10 @@
         font-family: var(--t-corpo);
     }
 
+    main {
+        min-height: 78.5vh;
+    }
+
     .flash {
         display: flex;
         flex-wrap: wrap;
@@ -72,6 +76,13 @@
         margin: .5em 0;
         box-shadow: 7px 10px 15px #0003;
         position: relative;
+        cursor: pointer;
+        perspective: 1000px;
+        transition: transform 1s ease;
+    }
+
+    .flash-iten.ve {
+        transform: rotateY(180deg);
     }
 
     .flash-iten:hover {
@@ -138,6 +149,10 @@
         font-size: 20px;
         font-family: var(--t-corpo);
     }
+
+    main {
+        min-height: 71.2vh;
+    }
     
     #escolher {
         font-size: 25px;
@@ -166,6 +181,13 @@
         margin: .5em 0;
         box-shadow: 7px 10px 15px #0003;
         position: relative;
+        cursor: pointer;
+        perspective: 1000px;
+        transition: transform 1s ease;
+    }
+
+    .flash-iten.ve {
+        transform: rotateY(180deg);
     }
 
     .flash-iten:hover {
@@ -176,7 +198,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        background-color: var(--fundo);
+        background-color: var(--meh);
         border: 1px solid black;
         border-radius: 15px;
         padding: 0 10px;
@@ -200,21 +222,24 @@
     }
 }
 
-main {
-    min-height: 71.2vh;
-}
-
 #escolher {
     text-align: center;
     margin: 1em auto;
 }
 
+#s-mat {
+    display: none;
+}
+
 .pergunta {
     display: block;
+    margin: 0 10px;
 }
 
 .resp {
     display: none;
+    margin: 0 10px;
+    transform: rotateY(180deg);
 }
 
 footer a {
