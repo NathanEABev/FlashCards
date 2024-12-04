@@ -74,11 +74,15 @@
         position: relative;
     }
 
+    .flash-iten:hover {
+        background-color: #ffefcb90;
+    }
+
     .tema {
         position: absolute;
         left: 0;
         top: 0;
-        background-color: var(--fundo);
+        background-color: var(--meh);
         border: 1px solid black;
         border-radius: 15px;
         padding: 0 10px;
@@ -164,6 +168,10 @@
         position: relative;
     }
 
+    .flash-iten:hover {
+        background-color: #ffefcb90;
+    }
+
     .tema {
         position: absolute;
         left: 0;
@@ -199,6 +207,14 @@ main {
 #escolher {
     text-align: center;
     margin: 1em auto;
+}
+
+.pergunta {
+    display: block;
+}
+
+.resp {
+    display: none;
 }
 
 footer a {
