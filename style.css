@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: var(--t-corpo);
+    color: var(--cText);
 }
 
 :root {
     --princ: #6C5CE7;
-    --text: #2F3640;
+    --cText: #2F3640;
     --fundo: #F7F1E3;
     --meh: #55E6C1;
+
+    --t-princ:  "Playfair Display", serif;  
+    --t-corpo: "Oswald", serif;
 }
 
 @media screen and (max-width: 500px) {
     header {
         background-color: var(--princ);
-        color: var(--text);
         display: flex;
         text-align: center;
         align-items: center;
@@ -21,6 +29,7 @@
         position: relative;
         width: 100%;
         height: 75px;
+        padding: 10px 0;
     }
     
     header img {
@@ -32,17 +41,37 @@
     #mucho-texto h1 {
         font-size: 40px;
         margin-bottom: 10px;
+        font-family: var(--t-princ);
     }
     
     #mucho-texto p {
-        font-size: 10px;
+        font-size: 15px;
+        font-family: var(--t-corpo);
+    }
+
+    footer {
+        background-color: var(--princ);
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    footer p {
+        background-color: white;
+        border-radius: 15px;
+        width: 250px;
+        margin: auto;
+    }   
+    
+    #escolher {
+        font-size: 20px;
     }
 }
 
 @media screen and (min-width: 501px){
     header {
-        background-color: var(--fundo);
-        color: var(--text);
+        background-color: var(--princ);
         display: flex;
         text-align: center;
         align-items: center;
@@ -50,6 +79,7 @@
         position: relative;
         width: 100%;
         height: 115px;
+        padding: 10px 0;
     }
     
     header img {
@@ -61,9 +91,76 @@
     #mucho-texto h1 {
         font-size: 50px;
         margin-bottom: 10px;
+        font-family: var(--t-princ);
     }
     
     #mucho-texto p {
-        font-size: 15px;
+        font-size: 20px;
+        font-family: var(--t-corpo);
     }
+
+    footer {
+        background-color: var(--princ);
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    footer p {
+        background-color: white;
+        border-radius: 15px;
+        width: 325px;
+        margin: auto;
+    }
+
+    #escolher {
+        font-size: 25px;
+    }
+}
+
+main {
+    min-height: 71.2vh;
+}
+
+#escolher {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.flash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distribui o espaço igualmente entre as divs */
+    align-items: center;
+    gap: 20px; /* Espaçamento fixo entre as linhas */
+    height: 100%;
+    margin-top: 1.5em;
+}
+
+.flash-iten {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--meh);
 }
