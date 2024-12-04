@@ -1,3 +1,38 @@
-body {
-    background-color: aqua;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --princ: #6C5CE7;
+    --text: #2F3640;
+    --fundo: #F7F1E3;
+    --meh: #55E6C1;
+}
+
+header {
+    background-color: var(--princ);
+    color: var(--text);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 115px;
+}
+
+header img {
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+#mucho-texto h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#mucho-texto p {
+    font-size: 15px;
 }
