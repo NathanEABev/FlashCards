@@ -228,7 +228,15 @@
 }
 
 #s-mat {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-por {
     display: flex;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .pergunta {
