@@ -39,3 +39,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const selecao = document.getElementById('materias');
+    const todos = document.querySelectorAll('.flash')
+    const mensagem = document.getElementById('mensagem')
+    
+
+    selecao.addEventListener('change', () => {
+        let valor = selecao.options[selecao.selectedIndex].value
+
+        todos.forEach(element => {
+            element.style.display = 'none';
+        });
+
+        switch (valor) {
+            case 'mat':
+                console.log('foi matemática')
+                document.getElementById('s-mat').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Matemática`
+                break        
+            case 'por':
+                console.log('foi português')
+                document.getElementById('s-por').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Português`
+                break
+            case 'fis':
+                console.log('foi física')
+                document.getElementById('s-fis').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Física`
+                break
+            case 'qui':
+                console.log('foi química')
+                document.getElementById('s-qui').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Química`
+                break
+            case 'bio':
+                console.log('foi biologia')
+                document.getElementById('s-bio').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Biologia/Biotecnologia`
+                break
+            case 'geo':
+                console.log('foi geografia')
+                document.getElementById('s-geo').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Geografia`
+                break
+            case 'his':
+                console.log('foi história')
+                document.getElementById('s-his').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de História`
+                break
+            case 'pro':
+                console.log('foi programação')
+                document.getElementById('s-pro').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Programação (html, css, JavaScript)`
+                break
+            case 'ing':
+                console.log('foi inglês')
+                document.getElementById('s-ing').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Inglês`
+                break
+            case 'edf':
+                console.log('foi educação financeira')
+                document.getElementById('s-edf').style.display = 'flex'
+                mensagem.innerText = `Flash Cards de Educação Financeira`
+                break
+            default:
+                console.log('foi não')
+                break
+        }
+    })
+});

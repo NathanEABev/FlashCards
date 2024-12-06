@@ -21,7 +21,7 @@
         <div id="escolher">
             <label for="materias">Escolha uma matéria:</label><br>
             <select name="materias" id="materias">
-                <option value="sele">Selecione a matéria</option>
+                <option value="sele" selected>Selecione a matéria</option>
                 <option value="mat">Matemática</option>
                 <option value="por">Português</option>
                 <option value="fis">Física</option>
@@ -34,6 +34,8 @@
                 <option value="edf">Educação Financeira</option>
             </select>
         </div>
+
+        <h2 id="mensagem"></h2>
 
         <section id="s-mat" class="flash">
             <div class="flash-iten">
@@ -66,9 +68,16 @@
                 <p class="resp">Conjunto de valores possíveis para x</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Matrizes</p></div>
-                <p class="pergunta">O que é a ordem de uma matriz?</p>
-                <p class="resp">É dada pelo número de linhas e colunas (m &times; n).</p>
+                <div class="tema"><p>Trigonometria</p></div>
+                <p class="pergunta">Qual é o seno de 45°?</p>
+                <p class="resp">
+                    <math  xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mn>√2</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                    </math>
+                </p>
             </div>
             <div class="flash-iten">
                 <div class="tema"><p>Geometria <br> plana</p></div>
@@ -98,9 +107,16 @@
                 <p class="resp">a<sub>n</sub> = a<sub>1</sub> + (n-1)r</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Números <br> complexos</p></div>
-                <p class="pergunta">Qual é a forma polar de um número complexo?</p>
-                <p class="resp">z = r(cos&theta; + i sin&theta;)</p>
+                <div class="tema"><p>Trigonometria/p></div>
+                <p class="pergunta">Qual é a tangente de 30?</p>
+                <p class="resp">
+                    <math  xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mn>√3</mn>
+                            <mn>3</mn>
+                        </mfrac>
+                    </math>
+                </p>
             </div>
             <div class="flash-iten">
                 <div class="tema"><p>Estatística</p></div>
@@ -111,320 +127,481 @@
 
         <section id="s-por" class="flash">
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Classes de <br> palavras</p></div>
+                <p class="pergunta">O que é um advérbio</p>
+                <p class="resp">Palavra que modifica um verbo, adjetivo ou outro advérbio, indicando circunstâncias como modo, tempo, lugar.</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Conjugação <br> verbal</p></div>
+                <p class="pergunta">Qual a conjugação do verbo "cantar" no presente do indicativo, 1ª pessoa do plural?</p>
+                <p class="resp">Nós cantamos.
+                </p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Concordância <br> verbal</p></div>
+                <p class="pergunta">Qual é a regra de concordância para sujeito composto posposto ao verbo?</p>
+                <p class="resp">O verbo concorda no plural.</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Figuras de <br> linguagem</p></div>
+                <p class="pergunta">O que é uma metáfora?</p>
+                <p class="resp">Comparação implícita entre elementos diferentes.</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Funções da <br> linguagem</p></div>
+                <p class="pergunta">Qual é a função da linguagem predominante em poesias?</p>
+                <p class="resp">Função poética</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Pontuação</p></div>
+                <p class="pergunta">Quando se usa ponto e vírgula?</p>
+                <p class="resp"> Para separar itens em listas ou orações coordenadas extensas.</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Regência <br> verbal</p></div>
+                <p class="pergunta">Qual a preposição usada com o verbo "assistir" no sentido de "ver"?</p>
+                <p class="resp">Preposição "a".</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Literatura</p></div>
+                <p class="pergunta">Quem é o autor de "Memórias Póstumas de Brás Cubas"?</p>
+                <p class="resp">Machado de Assis.</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Semântica</p></div>
+                <p class="pergunta">O que são sinônimos?</p>
+                <p class="resp">Palavras com significados semelhantes</p>
             </div>
             <div class="flash-iten">
-                <div class="tema"><p>Tema</p></div>
-                <p class="pergunta">Lorem ipsum</p>
-                <p class="resp"></p>
+                <div class="tema"><p>Ortografia</p></div>
+                <p class="pergunta">Qual a diferença entre "emigrar" e "imigrar"?</p>
+                <p class="resp">Emigrar é sair de um país, imigrar é entrar em outro.</p>
             </div>
         </section>
 
-        <!--<section id="s-fis" class="flash">
+        <section id="s-fis" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-qui" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-bio" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-geo" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-his" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-pro" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-ing" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
         </section>
 
         <section id="s-edf" class="flash">
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-                
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>                
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
             <div class="flash-iten">
-
+                <div class="tema"><p>tema</p></div>
+                <p class="pergunta">pergunta</p>
+                <p class="resp">resposta</p>
             </div>
-        </section>-->
+        </section>
     </main>
     <footer>
         <p>Site criado por <a href="https://github.com/NathanEABev" target="_blank" rel="external">Nathan Bevilaqua</a></p>

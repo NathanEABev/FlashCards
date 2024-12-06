@@ -118,6 +118,10 @@
     #escolher {
         font-size: 20px;
     }
+
+    #mensagem {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 501px){
@@ -220,11 +224,21 @@
         width: 325px;
         margin: auto;
     }
+
+    #mensagem {
+        font-size: 40px;
+    }
 }
 
 #escolher {
     text-align: center;
     margin: 1em auto;
+}
+
+#mensagem {
+   text-align: center;
+   font-family: var(--t-princ);
+   margin: 1em auto 2em;
 }
 
 #s-mat {
@@ -234,7 +248,55 @@
 }
 
 #s-por {
-    display: flex;
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-fis {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-qui {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-bio {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-geo {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-his {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-pro {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-ing {
+    display: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#s-edf {
+    display: none;
     text-align: center;
     margin-bottom: 2em;
 }
