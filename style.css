@@ -325,6 +325,10 @@ label {
     transform: rotateY(180deg);
 }
 
+math {
+    font-size: 25px;
+}
+
 small {
     text-align: center;
     color: wheat;
