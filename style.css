@@ -50,7 +50,7 @@
     }
 
     main {
-        min-height: 78.5vh;
+        min-height: 75.5vh;
     }
 
     .flash {
@@ -230,6 +230,18 @@
     }
 }
 
+body {
+    background-image: url(fundo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+label {
+    color: white;
+}
+
 #escolher {
     text-align: center;
     margin: 1em auto;
@@ -239,6 +251,7 @@
    text-align: center;
    font-family: var(--t-princ);
    margin: 1em auto 2em;
+   color: white;
 }
 
 #s-mat {
@@ -322,9 +335,9 @@ small a {
 }
 
 audio {
-    position: relative;
     width: 100%;
     display: none;
+    margin-top: 1em;
 }
 
 footer a {
