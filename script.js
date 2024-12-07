@@ -1,3 +1,5 @@
+window.alert('Cuidado com o audio!!! POr algum motivo a musica ficou muito alta')
+
 window.onload = function () {
     const audio = new Audio("musica.mp3");
     audio.loop = true; // Para repetir continuamente
