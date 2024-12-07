@@ -155,7 +155,7 @@
     }
 
     main {
-        min-height: 71.2vh;
+        min-height: 67.35vh;
     }
     
     #escolher {
@@ -310,6 +310,21 @@
     display: none;
     margin: 0 10px;
     transform: rotateY(180deg);
+}
+
+small {
+    text-align: center;
+    color: wheat;
+}
+
+small a {
+    color: wheat;
+}
+
+audio {
+    position: relative;
+    width: 100%;
+    display: none;
 }
 
 footer a {

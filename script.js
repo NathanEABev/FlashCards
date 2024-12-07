@@ -1,3 +1,15 @@
+window.onload = function () {
+    const audio = new Audio("musica.mp3");
+    audio.loop = true; // Para repetir continuamente
+    audio.play().catch(() => {
+        let mAudio = window.confirm('Por algum motivo o audio não vai, deseja abilitar o display de audio no final da página')
+
+        if(mAudio) {
+            document.getElementsByTagName('audio')[0].style.display = 'block'
+        }
+    });
+  };
+
 // Função para aguardar um tempo (em milissegundos)
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
